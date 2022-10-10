@@ -15,16 +15,20 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 240px;
     overflow: hidden;
     background-color: #f1f1f1;
+}
+
+li a {
+    float: left;
 }
 
 li a {
     display: block;
     color: #000;
     text-align: center;
-    padding: 8px 16px;
+    padding: 8px;
     text-decoration: none;
 }
 
