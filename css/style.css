@@ -16,12 +16,14 @@ ul {
     margin: 0;
     padding: 0;
     width: 200px;
+    overflow: hidden;
     background-color: #f1f1f1;
 }
 
 li a {
     display: block;
     color: #000;
+    text-align: center;
     padding: 8px 16px;
     text-decoration: none;
 }
@@ -42,6 +44,7 @@ li a:hover:not(.active) {
   }
 
 img {
+    border-radius: 25px;
     width: 400px;
     height: 300px;
     padding: 5px;
