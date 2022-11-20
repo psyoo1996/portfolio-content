@@ -11,17 +11,93 @@
     color: black;
 }
 
+header {
+    display: block;
+}
+
+.animation {
+  position: relative;
+  font-size: 60px;
+  color: yellow;
+  -webkit-text-stroke: 0.3px yellow;
+  text-transform: uppercase;
+}
+
+.animation::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 0px rgb(8, 116, 179);
+  border-right: 2px solid grey;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate
+{
+  0%,10%,100%
+  {
+    width: 0;
+  }
+  70%,90%
+  {
+    width: 25%;
+  }
+
+}
+
+.main {
+    position: relative;
+    top: 80px;
+}
+
+body {
+    background-image: url(https://wallpapercave.com/wp/wp4312251.gif);
+    background-size: cover;
+    background-position: center;
+    font-family: "Oswald", sans-serif
+}
+
+#logo {
+    animation-name: fadein;
+    animation-duration: 3s;
+    position: absolute;
+    left: 10px;
+    height: auto;
+    width: 60px;
+    top: 15px;
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+nav {
+    position: absolute;
+    right: 10px;
+    background-color: #f1f1f1;
+}
+
+.nav_link {
+    display: flex;
+    width: 27%;
+    flex-flow: row nowrap;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 240px;
-    overflow: hidden;
-    background-color: #f1f1f1;
 }
 
 li a {
-    float: left;
+    /* float: left; */
+    font-size: 30px;
 }
 
 li a {
@@ -56,7 +132,49 @@ img {
     margin: 5px;
 }
 
-img:hover {
+img:not(.logo):hover {
     width: 500px;
     height: 400px;
 }
+
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #1483b7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #144c83;
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 70%;
+  }
+
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+      scroll-behavior: auto;
+    }
+
+    .skip a{
+      -webkit-transition: none;
+      transition: none;
+    }
+  }

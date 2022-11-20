@@ -4,15 +4,25 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" type="image/x-icon" href="./image/favicon.png">
+      <!-- <link rel="stylesheet" type="text/css" href="css/html5reset.css"> -->
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <title>Welcome</title>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-9F7JJQH9N4');
+      </script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
    <body>
       <div class="skip"><a href="#main">Skip to Main Content</a></div>
       <header>
-         <h1>Welcome to the site!</h1>
+         <!-- <img src="image/logo.png" alt="logo" id = "logo" class="logo" width="10" height="auto"> -->
          <nav>
-            <ul>
+            <ul class="nav_link">
                <li><a class="active" href="./index.html">Home</a></li>
                <li><a href="./gallery.html">Gallery</a></li>
                <li><a href="./contact.html">Contact</a></li>
@@ -20,8 +30,9 @@
             </ul>
          </nav>
       </header>
-      <main id="main">
-         <h2>What is this site?</h2>
+      <main class="main">
+         <h1 data-text="Animationpub" class="animation">Animationpub</h1>
+         <h2>Welcome to the site!</h2>
          <p>For anyone interested in animation and video games, you are in the right place.
             <br>This is the site dedicated to people who enjoy animation and video game.
             <br>This is a fan website and I merely showcase screenshots and gif that I collected through my time. 
