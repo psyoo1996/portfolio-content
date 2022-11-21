@@ -137,6 +137,54 @@ img:not(.logo):hover {
     height: 400px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.main-head {
+  grid-area: header;
+}
+
+.main-nav {
+  grid-area: nav;
+}
+
+.side {
+  grid-area: sidebar;
+}
+
+.main-footer {
+  grid-area: footer;
+}
+
+.wrapper {
+  display: grid;
+  gap: 50px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "sidebar"
+    "footer";
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body>div>div {
+  flex-grow: 1;
+  width: 33%;
+  height: 100px;
+}
+
+.flex-container > div {
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
 input[type=text],input[type=email], textarea {
     width: 100%;
     padding: 12px;
