@@ -45,7 +45,7 @@ header {
   }
   70%,90%
   {
-    width: 25%;
+    width: 26%;
   }
 
 }
@@ -215,6 +215,25 @@ input[type=text],input[type=email], textarea {
     padding: 20px;
     width: 70%;
   }
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  @keyframes animate
+{
+  0%,10%,100%
+  {
+    width: 0;
+  }
+  70%,90%
+  {
+    width: 70%;
+  }
+
+}
+
+}
 
 @media screen and (prefers-reduced-motion: reduce){
     html{
