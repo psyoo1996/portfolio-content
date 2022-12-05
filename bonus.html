@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/x-icon" href="./image/favicon 2.png">
+      <!-- <link rel="stylesheet" type="text/css" href="css/html5reset.css"> -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-9F7JJQH9N4');
+      </script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <div class="skip"><a href="#title" id="white">Skip to Main Content</a></div>
+   <body class="grid-container" id="body">
+      <header class="main-head">
+         <nav>
+            <ul>
+               <li><a href="./index.html">Home</a></li>
+               <li><a href="./gallery.html">Gallery</a></li>
+               <li><a href="./contact.html">Contact</a></li>
+               <li><a href="./other.html">Other</a></li>
+               <li class="active"><a href="./bonus.html">Bonus</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main class="main-main">
+         <div class="logo">
+            <h2><a href="./index.html">Breaking Bad</a></h2>
+         </div>
+         <div class="videocomponent">
+         <figure id="title">
+            <video class="video"
+               autoplay="false"
+               width="820"
+               height="540"
+               id="videoplayer">
+               <source src="assets/Snow Globe.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+            <figcaption class="options">[El Camino]</figcaption>
+         </figure>
+         <div class="options">
+            <button id="play">Play Video</button>
+            <button id="pause">Pause Video</button>
+            <button id="slower">Slow Down</button>
+            <button id="faster">Speed Up</button>
+            <button id="skip">Skip Ahead</button>
+            <button id="back">Go Back</button>
+         </div>
+         <button class="options" id="mute">Mute</button><br>
+         <label for="slider">Volume</label>: 0
+         <input type="range" id="slider" min="0" max="100" value="100" step="10"> 100%<br>
+         <div>Volume is: <span id="volume"></span><br><br></div>
+      </div>
+      </main>
+      <script src="js/video.js"></script>
+      <footer class="main-footer" id="title">
+         <p>Author: Peter Yoo<br>
+            <a href="mailto:psyoo@umich.edu">psyoo@umich.edu</a>
+         </p>
+      </footer>
+   </body>
+</html>

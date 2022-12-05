@@ -22,6 +22,10 @@ header {
   color: black;
 }
 
+#white{
+  color: white;
+}
+
 .BreakingBad::before {
   content: attr(data-text);
   position: absolute;
@@ -49,16 +53,28 @@ header {
 }
 
 body {
-    /* background-image: url(https://wallpapercave.com/wp/wp4312251.gif); */
     background-size: cover;
     background-color: black;
     background-position: center;
     font-family: "Oswald", sans-serif
 }
 
+#body{
+  background-color: grey;
+}
+
+h2{
+  font-size: 30px;
+}
+
+p{
+  font-size: 20px;
+}
+
 nav{
   position: absolute;
   right: 10px;
+  padding-right: 15px;
 }
 
 .images{
@@ -74,21 +90,16 @@ nav{
   height: 100%;
 }
 
-.grid-container {
-  display: grid;
-}
-
 .main-head {
   grid-area: header;
 }
 
-.main-nav {
-  grid-area: nav;
+.header1{
+  grid-area: header1;
 }
 
-.side {
-  grid-area: sidebar;
-  text-align: center;
+.main-main{
+  grid-area: main;
 }
 
 .main-footer {
@@ -110,7 +121,6 @@ nav{
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
-
 
 #breakingbad{
   color: black;
@@ -156,16 +166,6 @@ nav ul li.btn:hover a{
   color: black;
   background: white;
   transition: 2s;
-}
-
-.wrapper {
-  display: grid;
-  gap: 50px;
-  grid-template-areas:
-    "header"
-    "nav"
-    "sidebar"
-    "footer";
 }
 
 .flex-container {
@@ -219,7 +219,17 @@ input[type=text],input[type=email], textarea {
     background-color: #f2f2f2;
     padding: 20px;
     width: 70%;
+    display: inline-block;
+    margin-left: 15%;
   }
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  'header1 header1 header header header header'
+  'main main main main main main'
+  'footer footer footer footer footer footer';
+}
 
 .title{
   text-align: center;
@@ -229,9 +239,32 @@ input[type=text],input[type=email], textarea {
   color: white;
 }
 
+.videocomponent{
+  text-align: center;
+}
+
+.options button{
+  font-size: 25px;
+}
+
+.options{
+  font-size: 25px;
+}
+
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'header1 header1 header1 header1 header1 header1'
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+  }
+  .main-head{
+    margin-bottom: 80px;
   }
   @keyframes animate
 {
@@ -243,16 +276,13 @@ input[type=text],input[type=email], textarea {
   {
     width: 70%;
   }
-
 }
-
 }
 
 @media screen and (prefers-reduced-motion: reduce){
     html{
       scroll-behavior: auto;
     }
-
     .skip a{
       -webkit-transition: none;
       transition: none;
