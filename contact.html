@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" type="image/x-icon" href="./image/favicon.png">
+      <link rel="icon" type="image/x-icon" href="./image/favicon 2.png">
       <!-- <link rel="stylesheet" type="text/css" href="css/html5reset.css"> -->
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <title>Contact</title>
@@ -19,61 +19,43 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      
    </head>
-   <body>
+   <body class="grid-container">
       <header>
          <nav>
-            <ul class="nav_link">
+            <ul>
                <li><a href="./index.html">Home</a></li>
                <li><a href="./gallery.html">Gallery</a></li>
-               <li><a class="active" href="./contact.html">Contact</a></li>
+               <li class="active"><a href="./contact.html">Contact</a></li>
                <li><a href="./other.html">Other</a></li>
             </ul>
          </nav>
       </header>
       <main>
-         <h1>Contact Me</h1>
-         <img src='image/contactme.png' alt='contact' width=400>
-         <h2>Who am I?</h2>
-         <i class="fa fa-quote-left fa-3x fa-pull-left fa-border"></i>
-         <p>I am a second-year graduate student at the University of Michigan pursuing a Master of Science in Human-Computer Interaction. 
-            <br>I believe that a good design should always understand users, care for users, and design for users. 
+         <div class="logo">
+            <h2><a href="./index.html">Breaking Bad</a></h2>
+         </div>
+         <img src='image/cook.png' alt='contact' width=400>
+         <h2 id="title">Who am I?</h2>
+         <p id="title">I am a second-year graduate student at the University of Michigan pursuing a Master of Science in Human-Computer Interaction. I believe that a good design should always understand users, care for users, and design for users. 
             <br>I hope to use my design and technical skills to connect people of different background by bringing them together.
          </p>
-         <h2>What other things do I like?</h2>
-         <p>As you have seen some of them, I like animation (the good ones, not the bad ones like Emoji movie).
-            <br>But I also like to design and technology and hopefully in the future, I could pursue a career that is an intersection of the three. 
-            <br>Aside from this, I also like to practice martial arts, watch Netflix, and listen to musics (especially indie folks).
+         <h2 id="title">So why Breaking Bad?</h2>
+         <p id="title">As you have seen some of them, I like Breaking Bad. The universe that Vince Gilligan created is masterfully crafted with perfection. There never has been any other original television show that was able to produce a prequel and a sequel movie and all of them surpassing the predecessor. There will never be another television show like Breaking Bad and 100 years from now, people will look back and study Breaking Bad in school to understand filmmaking and culture of 2010s. 
          </p>
-         <p>You can contact me through my email by clicking<a href="mailto:psyoo@umich.edu"> here.</a></p>
-         <p>Or you can reach me on <a href="https://app.slack.com/client/T01CB2AFPSS/D02CBQJV7CL">slack.</a></p>
+         <p id="title">If you are a fan of the show like I am, you can contact me through my email by clicking<a href="mailto:psyoo@umich.edu"> here.</a></p>
+         <div class="container">
+            <form action="https://formspree.io/f/xeqdpvoz" method="POST">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name..">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email..">
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
       </main>
-      <!-- <form action="https://formspree.io/f/xeqdpvoz" method="POST">
-         <label>
-            Your email:
-            <input type="email" name="email">
-         </label>
-         <label>
-            Your message:
-            <textarea name="message"></textarea>
-         </label>
-         <button type="submit">Send</button>
-      </form> -->
-      <div class="container">
-         <form action="https://formspree.io/f/xeqdpvoz" method="POST">
-           <label for="name">Name</label>
-           <input type="text" id="name" name="name" placeholder="Your name..">
-
-           <label for="email">Email</label>
-           <input type="email" id="email" name="email" placeholder="Your email..">
-
-           <label for="subject">Subject</label>
-           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-       
-           <input type="submit" value="Submit">
-         </form>
-       </div>
-       
-      <footer>
+      <footer class="main-footer" id="title">
          <p>Author: Peter Yoo<br>
             <a href="mailto:psyoo@umich.edu">psyoo@umich.edu</a>
          </p>
