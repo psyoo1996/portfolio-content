@@ -19,7 +19,7 @@ header {
   position: relative;
   font-size: 60px;
   text-transform: uppercase;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 #white{
@@ -32,7 +32,7 @@ header {
   top: 0;
   left: 0;
   width: 0;
-  color: rgb(17, 126, 188);
+  color: rgb(255, 255, 255);
   -webkit-text-stroke: 0px rgb(17, 126, 188);
   border-right: 2px solid grey;
   overflow: hidden;
@@ -176,6 +176,7 @@ nav ul li.btn:hover a{
 
 .main-footer{
   text-align: center;
+  color: white;
 }
 
 body>div>div {
@@ -202,7 +203,7 @@ input[type=text],input[type=email], textarea {
   }
 
   input[type=submit] {
-    background-color: #1483b7;
+    background-color: #000000;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -253,6 +254,23 @@ input[type=text],input[type=email], textarea {
 
 a{
   color: white
+}
+
+p{
+  color: white;
+}
+
+h1{
+  color: white;
+}
+
+h2{
+  color: white;
+}
+
+#caption{
+  color: white;
+  font-size: 40px;
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
